@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>Hier kannst du deine URL verkürzen</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="url">Gib hier deine URL ein: </label>
+        <input type="text" name="url" id="url" required>
+        <input type="submit">
+    </form>
+</body>
+</html>
